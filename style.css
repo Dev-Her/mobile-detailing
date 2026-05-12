@@ -1,0 +1,170 @@
+ @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: #cdcdcd;
+}
+button {
+  cursor: pointer;
+}
+.nav__container {
+  width: 100%;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 50px 28px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img__wrapper {
+  width: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  width: 150px;
+}
+.nav__links {
+  display: flex;
+  margin: 0 auto;
+  gap: 32px;
+}
+
+.nav__link {
+  font-size: 20px;
+  font-weight: 600;
+  transition: ease 200ms;
+}
+
+.nav__link:hover {
+  color: #20cb14;
+  text-decoration: underline;
+  text-underline-offset: 15px;
+  text-decoration-thickness: 2px;
+}
+
+.nav__btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #20cb14;
+  background-color: black;
+  border-radius: 5px;
+  border-color: #20cb14;
+  width: 150px;
+}
+
+.nav__btn:hover {
+  background-color: #20cb14;
+  color: black;
+  font-weight: 700;
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.row {
+  max-width: 1480px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  padding: 80px;
+}
+
+header {
+  position: relative;
+  min-height: 80vh;
+  overflow: hidden;
+  background-color: black;
+}
+
+.header__bg {
+  position: absolute;
+
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  opacity: 0.3;
+}
+
+.header__row {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.header__text {
+  display: flex;
+  flex-direction: column;
+
+  color: rgb(255, 255, 255);
+  max-width: 500px;
+  
+  position: relative;
+  z-index: 2;
+}
+
+.header__title {
+  font-size: 50px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.header__para {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.header__span {
+  color: #20cb14;
+}
+.header__btn__wrap {
+  display: flex;
+
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.header__btn {
+  padding: 10px 10px;
+  font-size: 16px;
+  color: #20cb14;
+  background-color: black;
+  border-radius: 5px;
+  border-color: #20cb14;
+  width: 200px;
+}
+
+.header__btn:hover {
+  background-color: #20cb14;
+  color: black;
+  font-weight: 700;
+}
