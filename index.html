@@ -21,12 +21,12 @@
     <nav>
       <div class="nav__container">
         <div class="img__wrapper">
-          <img src="assests/logo.png" alt="" class="nav__logo" />
+          <img src="assests/nd.png" alt="" class="nav__logo" />
         </div>
         <div class="nav__links">
           <a href="#home" class="nav__link">Home</a>
           <a href="" class="nav__link">Services</a>
-          <a href="" class="nav__link">Packages</a>
+          <a href="" class="nav__link">Pricing</a>
           <a href="" class="nav__link">About Us</a>
           <a href="" class="nav__link">Gallery</a>
           <a href="" class="nav__link">Contact</a>
@@ -40,23 +40,101 @@
     </nav>
 
     <header id="home">
-        <div class="container">
-            <div class="row header__row">
+      <div class="container">
+        <div class="row header__row">
+          <img src="assests/bmw.png" class="header__bg" />
+          <div class="header__text">
+            <p class="header__subtitle">Premium Detailing</p>
+            <h1 class="header__title">
+              Premium Detailing <span class="header__span">Anywhere. </span>
+            </h1>
+            <p class="header__para">
+              Nazario Detailing is a one stop shop for all your automotive
+              detailing needs. We offer a wide range of services to fit your
+              needs.
+            </p>
 
-               
-                <img src="assests/bmw.png" class="header__bg">
-                <div class="header__text">
-                    <h1 class="header__title">Premium Detailing <span class="header__span">Anywhere. </span> </h1>
-                    <p class="header__para">Nazario Detailing is a one stop shop for all your automotive detailing needs. We offer a wide range of services to fit your needs.</p>
+            <div class="header__btn__wrap">
+              <a href="#contact" class="header__btn"> Book Your Detail </a>
 
-                    <div class="header__btn__wrap">
-                        <button class="header__btn">Book Your Detail</button>
-                        <button class="header__btn">Our Services</button>
-                    </div>
-                </div>
-
+              <a href="#pricing" class="header__btn"> Our Services </a>
             </div>
+          </div>
         </div>
+      </div>
     </header>
+    <main>
+      <section id="pricing">
+        <div class="container">
+          <div class="row pricing__row">
+            <div class="pricing__text">
+              <h2 class="pricing__title">Pricing Packages</h2>
+              <!-- 4 cards
+ Interior Detail
+Exterior Detail
+Complete Detail
+Ultimate Detail -->
+              <div class="pricing__cards">
+                <div class="pricing__card">
+                  <p class="pricing__card__title">Interior Detail</p>
+                  <span class="pricing__card__price">$40</span>
+
+                  <ul class="pricing__features">
+                    <li>Full Interior Vacuum</li>
+                    <li>Dashboard Wipe Down</li>
+                    <li>Door Panel Cleaning</li>
+                    <li>Window Cleaning</li>
+                    <li>Trash Removal</li>
+                  </ul>
+
+                  <button class="pricing__card__btn">Book Now</button>
+                </div>
+                <div class="pricing__card">
+                  <p class="pricing__card__title">Exterior Detail</p>
+                  <span class="pricing__card__price"> $40</span>
+
+                  <ul class="pricing__features">
+                    <li>Hand Wash</li>
+                    <li>Tire Cleaning</li>
+                    <li>Wheel Cleaning</li>
+                    <li>Window Cleaning</li>
+                    <li>Tire Shine Finish</li>
+                  </ul>
+                  <button class="pricing__card__btn">Book Now</button>
+                </div>
+                <div class="pricing__card">
+                  <p class="pricing__card__title">Complete Detail</p>
+                  <span class="pricing__card__price">$80</span>
+
+                  <ul class="pricing__features">
+                    <li>Full Interior Cleaning</li>
+                    <li>Full Exterior Wash</li>
+                    <li>Wheel & Tire Detail</li>
+                    <li>Interior Vacuum</li>
+                    <li>Streak-Free Windows</li>
+                  </ul>
+
+                  <button class="pricing__card__btn">Book Now</button>
+                </div>
+                <div class="pricing__card">
+                  <p class="pricing__card__title">Ultimate Detail</p>
+                  <span class="pricing__card__price">$110</span>
+
+                  <ul class="pricing__features">
+                    <li>Interior + Exterior Detail</li>
+                    <li>Premium Spray Sealant</li>
+                    <li>Tire Shine Finish</li>
+                    <li>Trim Restoration</li>
+                    <li>Showroom Finish</li>
+                  </ul>
+
+                  <button class="pricing__card__btn">Book Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
