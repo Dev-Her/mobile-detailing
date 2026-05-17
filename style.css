@@ -27,7 +27,7 @@ li {
 }
 
 .container {
-  padding: 80px 0;
+  padding: 100px;
 }
 
 .row {
@@ -104,10 +104,6 @@ li {
   margin: 0 auto;
   justify-content: center;
   align-items: center;
-}
-
-.container {
-  padding: 80px;
 }
 
 header {
@@ -204,6 +200,9 @@ header {
 }
 
 /* Pricing */
+#pricing {
+  background-color: rgb(88, 88, 88);
+}
 .pricing__row {
   display: flex;
   flex-direction: column;
@@ -222,11 +221,12 @@ header {
   color: #ffffff;
   position: absolute;
   bottom: -1;
-  
+
   border-radius: 5px;
   border: 2px solid #20cb14;
-  width: 200px; background-color: #0c0c0c;
-  
+  width: 200px;
+  background-color: #0c0c0c;
+
   font-weight: 700;
 }
 
@@ -234,7 +234,6 @@ header {
   display: flex;
   flex-direction: column;
   gap: 32px;
-  
 }
 
 .img__price__wrap {
@@ -244,7 +243,7 @@ header {
   align-items: center;
 }
 
-.price__logo{
+.price__logo {
   width: 280px;
 }
 .pricing__title {
@@ -265,29 +264,21 @@ header {
   justify-content: center;
   flex-direction: column;
   border: solid 1px #20cb14;
-  border-radius: 10px ; 
+  border-radius: 10px;
   background-color: #000000;
   min-height: 850px;
   width: 450px;
   transition: all ease 200ms;
 }
 
-
 .pricing__card:hover {
   transform: translateY(-10px);
 
   box-shadow: 0 0 30px rgba(32, 203, 20, 0.25);
 
-    background: linear-gradient(
-    180deg,
-    rgba(32, 203, 20, 0.25),
-    rgb(0, 0, 0)
-  );
+  background: linear-gradient(180deg, rgba(32, 203, 20, 0.25), rgb(0, 0, 0));
 }
 
-
-
- 
 .pricing__divider {
   width: 300px;
   height: 2px;
@@ -299,7 +290,6 @@ header {
 .pricing__card__title {
   font-size: 32px;
   font-weight: 600;
-  
 }
 
 .pricing__title__span {
@@ -313,7 +303,6 @@ header {
   font-size: 42px;
   font-weight: 600;
   color: #20cb14;
-
 }
 
 .pricing__features {
@@ -324,7 +313,6 @@ header {
   font-size: 18px;
   font-weight: 600;
   color: rgb(255, 255, 255);
-  
 }
 
 .pricing__features li {
@@ -337,8 +325,6 @@ header {
 .fa-check {
   color: #20cb14;
 }
-
-
 
 .pricing__card__btn {
   display: flex;
@@ -361,16 +347,13 @@ header {
   box-shadow: #20cb14 0px 0px 10px 0px;
 }
 
-
 .about__row {
   display: flex;
 
   width: 100%;
-  max-width: 1280px;
-  gap: 32px;
+
   align-items: center;
   justify-content: space-between;
- 
 }
 
 .about__text {
@@ -379,7 +362,6 @@ header {
   gap: 24px;
   font-size: 18px;
   font-weight: 600;
-  
 }
 
 .about__title {
@@ -392,9 +374,8 @@ header {
 }
 
 .about__para {
-  
   font-weight: 600;
-  line-height: 2.0;
+  line-height: 2;
   max-width: 500px;
   letter-spacing: 1px;
 }
@@ -405,7 +386,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }
 
 .about__img {
@@ -413,23 +393,88 @@ header {
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
- 
 }
-
 
 /* Contact */
-
+.contact__container {
+  padding: 200px;
+}
 .contact__row {
   display: flex;
-  flex-direction: column;
-  background-color: #20cb14;
-  
-  
-  gap: 32px;
+
+  width: 100%;
+
+  align-items: center;
+  justify-content: space-between;
 }
-.contact__form {
+
+.contact__text {
   display: flex;
   flex-direction: column;
-  gap: 24px;
-  
+  gap: 18px;
 }
+
+.contact__subtitle {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #20cb14;
+  letter-spacing: 1px;
+}
+
+.contact__title {
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  max-width: 500px;
+}
+
+.contact__span {
+  color: #20cb14;
+}
+
+.contact__para {
+  font-size: 18px;
+  font-weight: 500;
+  max-width: 500px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  color: #c4c4c4;
+  margin-bottom: 20px;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+}
+
+.contact__item {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+}
+
+i {
+  font-size: 36px;
+  color: #20cb14;
+  cursor: pointer;
+}
+
+.contact__phone__title {
+  color: #20cb14;
+  font-size: 18px;
+}
+
+.contact__phone__media {
+  color: #c4c4c4;
+  font-size: 24px;
+}
+
+.contact__info__text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
