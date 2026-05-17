@@ -6,7 +6,9 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: rgb(0, 0, 0);
   color: aliceblue;
@@ -20,9 +22,20 @@ button {
   cursor: pointer;
 }
 
+li {
+  list-style: none;
+}
 
 .container {
   padding: 80px 0;
+}
+
+.row {
+  max-width: 1280px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav__container {
@@ -197,6 +210,26 @@ header {
   gap: 32px;
 }
 
+.pricing__top__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.value__btn {
+  padding: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  bottom: -1;
+  
+  border-radius: 5px;
+  border: 2px solid #20cb14;
+  width: 200px; background-color: #0c0c0c;
+  
+  font-weight: 700;
+}
+
 .pricing__text {
   display: flex;
   flex-direction: column;
@@ -204,6 +237,16 @@ header {
   
 }
 
+.img__price__wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price__logo{
+  width: 280px;
+}
 .pricing__title {
   font-size: 42px;
   font-weight: 600;
@@ -219,24 +262,58 @@ header {
   display: flex;
   gap: 24px;
   align-items: center;
+  justify-content: center;
   flex-direction: column;
   border: solid 1px #20cb14;
   border-radius: 10px ; 
   background-color: #000000;
-  min-height: 550px;
+  min-height: 850px;
   width: 450px;
+  transition: all ease 200ms;
+}
+
+
+.pricing__card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 0 30px rgba(32, 203, 20, 0.25);
+
+    background: linear-gradient(
+    180deg,
+    rgba(32, 203, 20, 0.25),
+    rgb(0, 0, 0)
+  );
+}
+
+
+
+ 
+.pricing__divider {
+  width: 300px;
+  height: 2px;
+  background-color: #20cb14;
+  margin: 20px auto;
+  box-shadow: 0 0 10px #20cb14;
 }
 
 .pricing__card__title {
-  font-size: 24px;
+  font-size: 32px;
   font-weight: 600;
-  margin-top: 42px;
+  
+}
+
+.pricing__title__span {
+  color: #20cb14;
+}
+.pricing__span {
+  color: #20cb14;
 }
 
 .pricing__card__price {
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 600;
   color: #20cb14;
+
 }
 
 .pricing__features {
@@ -247,7 +324,20 @@ header {
   font-size: 18px;
   font-weight: 600;
   color: rgb(255, 255, 255);
+  
 }
+
+.pricing__features li {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.fa-check {
+  color: #20cb14;
+}
+
 
 
 .pricing__card__btn {
@@ -265,7 +355,81 @@ header {
 }
 
 .pricing__card__btn:hover {
-  background-color: #20cb14;
+  background-color: rgb(12, 120, 39);
   color: black;
   font-weight: 700;
+  box-shadow: #20cb14 0px 0px 10px 0px;
+}
+
+
+.about__row {
+  display: flex;
+
+  width: 100%;
+  max-width: 1280px;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+
+.about__title {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.about__span {
+  color: #20cb14;
+}
+
+.about__para {
+  
+  font-weight: 600;
+  line-height: 2.0;
+  max-width: 500px;
+  letter-spacing: 1px;
+}
+
+.about__wrapper {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+ 
+}
+
+
+/* Contact */
+
+.contact__row {
+  display: flex;
+  flex-direction: column;
+  background-color: #20cb14;
+  
+  
+  gap: 32px;
+}
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
 }
