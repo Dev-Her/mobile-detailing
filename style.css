@@ -254,11 +254,13 @@ header {
 
 .pricing__cards {
   display: flex;
+ 
   gap: 32px;
 }
 
 .pricing__card {
   display: flex;
+  
   gap: 24px;
   align-items: center;
   justify-content: center;
@@ -554,4 +556,85 @@ i {
 .contact__btn:hover {
   background-color: #20cb14;
   color: black;
+}
+
+
+/* Services */
+
+.service__row {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.service__title {
+  font-size: 42px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.service__img__wrap {
+  width: 500px;
+  max-width: 500px;
+  height: 500px;
+  position: relative;
+
+}
+
+.service__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  filter: brightness(50%);
+  transition: ease 200ms;
+}
+
+.service__img:hover {
+  filter: brightness(100%);
+}
+
+.service__lists {
+  display: flex;
+  gap: 18px;
+}
+.service__card {
+  cursor: pointer;
+}
+
+.service__list__title {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 32px;
+  
+
+}
+
+
+/* practice media query */
+
+
+/* @media (max-width: 480px) { 
+  header {
+    min-height: 50vh;
+  }
+  .header__bg {
+    object-position: 70% center;
+  }
+
+  .header__row {
+    margin-top: 80px;
+  }
+
+  .header__row {
+    justify-content: center;
+
+  }
+
+ 
+  
+
+  
 }
