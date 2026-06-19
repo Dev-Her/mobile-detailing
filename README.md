@@ -17,4 +17,4 @@ This is a responsive website I created for a side business I started with my fat
 - JavaScript
 
 ## Live Demo
-https://local-business-remodel.vercel.app/
+https://mobile-detailing-teal.vercel.app/
