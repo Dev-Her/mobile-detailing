@@ -16,6 +16,10 @@ body {
   color: aliceblue;
 }
 
+body.menuOpen {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
   color: #dbd8d8;
@@ -122,6 +126,13 @@ header {
   background-color: black;
 }
 
+header .container {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
 .header__bg {
   position: absolute;
   top: 0;
@@ -137,7 +148,8 @@ header {
   justify-content: flex-start;
   align-items: center;
   margin-left: 45px;
-  margin-top: 150px;
+  margin-top: 0;
+  width: 100%;
 }
 
 .header__text {
@@ -339,6 +351,7 @@ header {
   max-width: 100%;
   padding: 42px 32px;
   transition: all ease 200ms;
+  
 }
 
 .pricing__card:hover {
@@ -361,12 +374,7 @@ header {
   font-weight: 600;
   text-align: center;
 }
-.pricing__card__text {
-  font-size: 24px;
-  font-weight: 600;
-  text-align: center;
-  color: white;
-}
+
 
 .pricing__title__span {
   color: #20cb14;
@@ -380,7 +388,18 @@ header {
   font-size: 42px;
   font-weight: 600;
   color: #20cb14;
+  
 }
+
+.pricing__card__text {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+  margin-right: 4px;
+ 
+}
+
 
 .pricing__features {
   display: flex;
@@ -722,6 +741,10 @@ header {
   display: none;
 }
 
+.menu {
+  display: none;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -753,6 +776,7 @@ header {
   }
 
   .menu {
+    display: block;
     position: fixed;
     top: 0;
     right: -100%;
@@ -795,7 +819,7 @@ header {
 
   .header__row {
     margin-left: 0;
-    margin-top: 80px;
+    margin-top: 0;
     justify-content: center;
     text-align: center;
   }
@@ -1026,5 +1050,11 @@ header {
   .footer__links {
     flex-direction: column;
     gap: 16px;
+    font-size: 14px;
+  }
+  .footer__container {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
   }
 }
